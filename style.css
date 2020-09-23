@@ -3,141 +3,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(54, 88, 88);
+    font-family: Cairo;
+  }
 
-        body {
-            background-image: linear-gradient(white, #5C1945);
-        }
-        
-        h2 {           
-            font-family: 'Cairo', sans-serif;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466);
-            background-color: #b43d6f85;
-            margin: 0px;    
-            padding: 5px 5px 5px 12px;        
-        }
-        p, ol {
-            font-family: 'Cairo', sans-serif;
-        }
-        .master {
-            font-size: 1.2em;
-        }
-        .importante {
-            color: rgb(194, 0, 0);
-            background-color: thistle;
-            padding: 3px 10px;
-        }
-        .box {
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438); 
-        }
-        .menu {
-            background-color: #754364;
-            position: fixed;
-            margin: 0;
-            padding: 10px;
-            width: 100%; 
-            text-align: left;                        
-        }
-        .menu a {            
-            color: white;
-            font-family: 'Cairo', sans-serif;
-            font-size: 1em;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 30px                         
-        }        
-            .menu a:hover {
-                color: #9F8294;        
-            } 
-            main {
-                padding: 60px;      
-                height: auto;
-            }
-            .nome h1 {
-                    background-color: white;
-                font-family: 'Kalam', cursive;
-                color: #5C1945;
-                text-align: center;
-                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.466);
-                    font-size: 2em;
-                    margin: 0;
-                    padding: 35px 20px 5px 20px;
-                }
-                    .nome p {
-                        font-size: 0.8em;
-                        color: #5C1945;
-                        margin: 0;
-                        text-align: center;
-                        padding: 10px 10px;
-                    }        
-                .primeira-secao {
-                    background-color: #fafafa;
-                    padding: 0 35px 35px 35px; 
-                }
-                    .picture {
-                    background-color: #A82D7F;
-                    border-radius: 50%;
-                    float: left;
-                    width: 20%;
-                    padding: 5px;
-                    margin: 10px 20px;
-                    }  
-                .quemsoueu h2 {
-                    background-color: unset;
-                }          
-            .descricao-detalhada p {   margin: 10px;
-                font-size: 1.2em;
-                line-height: 30px;
-            }         
-        .skills {
-            background-image: radial-gradient(white, rgb(224, 224, 224));
-            margin: 0px;          
-            background-size: cover; 
-            height: auto;
-        }  
-            .skills p {
-                margin: 0;
-            }  
-            .skills-master {            
-                text-align: center;
-            }      
-        
-            .skills-conteudo {
-                display: inline-block;
-                vertical-align: top;
-                padding: 20px 25px;
-                margin: 35px;
-                background-color: white;
-                border: 3px dashed black; 
-                border-radius: 5%;
-            }
-                .skills-conteudo ol li{
-                    text-align: center;
-                    margin-right: 35px;
-                }                           
-        .interesses-master {
-            background-color: thistle;
-            margin-top: 0px;
-            padding: 0px;
-            background-size: cover; 
-            height: auto;           
-        }
-        .interesses-master h2 {
-            margin-top: 0;
-        }
-        .interesses-conteudo {
-            padding: 35px;
-            margin: 10px;
-        }
-            .interesses-conteudo a {
-                font-family: 'Cairo', sans-serif;
-                font-size: 1.2em;               
-                color: rgb(44, 44, 44);
-                text-decoration: none;
-            }        
-                .interesses-conteudo a:hover {
-                    color: #9F8294;
-                }     
+header {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-           
-       
-    
+}
+.menu-box {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.name-box h1 {
+    font-size: 1.6em;
+    margin: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+}
+
+.name-box p {
+    margin: 0;
+}
+
+.menu-links a {
+    color: gray;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    min-height: 70vh;
+}
+
+.sobre-container img {
+    border-radius: 50%;
+    width: 25%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.377);
+}
+
+.sobre-container p {
+    text-align: center;
+    line-height: 1.6em;
+    margin-left: 20px;
+    flex-basis: 60%;
+    font-size: 1.1em;
+}
+
+.skills-container {
+    background-color: rgb(243, 167, 56);
+    padding: 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.skills-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills {
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 20px;
+    padding: 20px;
+    width: 30%;
+    line-height: 1.3em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.377);
+    font-size: 1.1em;
+
+}
+
+.skills-box h3 {
+    margin: 10px;
+}
+
+.trybe-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.project-text {
+    text-align: center;
+    width: 40%;
+}
+
+.project img {
+    width: 90%;
+}
+
+hr {
+  width: 30%;
+  margin: auto;
+}
+
+footer {
+    background-color: rgb(255, 89, 48);
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}

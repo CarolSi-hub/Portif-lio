@@ -103,6 +103,7 @@ header {
 }
 
 .skills-box {
+    box-sizing: content-box;
     display: flex;
     width: 100%;
     justify-content: space-evenly;

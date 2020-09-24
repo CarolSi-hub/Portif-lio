@@ -18,16 +18,21 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
 
 }
 .menu-box {
-    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.name-box {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .name-box h1 {
@@ -184,4 +189,23 @@ footer p {
     font-weight: 600;
     padding: 5px;
     text-align: center;
+}
+
+@media only screen and (max-device-width: 380px) {
+
+    .name-box {
+        text-align: center;
+    }
+    .menu-box {
+        display: none;
+    }
+
+    .name-box h1 {
+        font-size: 1.3em;
+    }
+
+    .name-box p {
+        font-size: 0.9em;
+    }
+
 }

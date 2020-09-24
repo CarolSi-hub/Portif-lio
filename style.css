@@ -208,4 +208,12 @@ footer p {
         font-size: 0.9em;
     }
 
+    .hero {
+        min-height: 80vh;
+      }
+
+    .hero p {
+        font-size: 1.7em;
+    }
+
 }

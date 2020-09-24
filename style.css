@@ -216,4 +216,50 @@ footer p {
         font-size: 1.7em;
     }
 
+    .sobre-container img {
+        width: 65%;
+        margin: 5px;
+    }
+
+    .sobre-container p {
+        font-size: 1.2em;
+    }
+
+    .skills-box {
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 85%;
+        line-height: 1em;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.377);
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    .project {
+        padding: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .project-text {
+        text-align: center;
+        width: 50%;
+        font-size: 0.9;
+    }
+
+    .project-text p {
+        display: none;
+    }
+
+    .project-text ul {
+        display: none;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
 }
